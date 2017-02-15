@@ -15,7 +15,8 @@ Test = {
 		generator = operator.generator
 	end,
 	testOne = function()
-		luaunit.assertEquals(generator(1), {})
+		luaunit.assertEquals(generator(1), {0})
+		-- luaunit.assertEquals(generator(1), {})
 	end,
 	testTwo = function()
 		luaunit.assertEquals(generator(2), { 2 })
